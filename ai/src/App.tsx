@@ -1,15 +1,16 @@
-import React, { JSX } from 'react';
-import HaikuComponent from './components/HaikuComponent';
+import React from 'react';
+import { Container, Typography } from '@mui/material';
 import SunsetImageComponent from './components/SunsetImageComponent';
-import ChatComponent from './components/ChatComponent';
 
-export default function App(): JSX.Element {
+function App() {
   return (
-    <div>
-      <h1>Генерация текста и изображений с Pollinations</h1>
-      <HaikuComponent />
+    <Container sx={{ padding: '20px' }}>
+      <Typography variant="h3" align="center" gutterBottom>
+        Pollinations Demo
+      </Typography>
       <SunsetImageComponent />
-      <ChatComponent />
-    </div>
+    </Container>
   );
 }
+
+export default App;
